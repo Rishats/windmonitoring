@@ -1,6 +1,6 @@
 <?php
 
-include "autoload.php";
+include "../vendor/autoload.php";
 use DiDom\Document;
 
 
