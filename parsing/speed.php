@@ -4,7 +4,7 @@ include "../vendor/autoload.php";
 use DiDom\Document;
 
 
-class Main
+class Speed
 {
     public function speedWind()
     {
@@ -18,7 +18,4 @@ class Main
 }
 
 
-$speed = new Main();
-
-echo $speed->speedWind();
 
