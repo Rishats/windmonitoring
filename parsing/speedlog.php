@@ -1,6 +1,6 @@
 <?php
 require_once 'connection.php'; // подключаем скрипт с коннектом
-require_once 'speed.php'; // подключаем скрипт с коннектом
+require_once 'speed.php'; // подключаем скрипт которые чекает скорость ветра на данный момент.
 
 // подключаемся к серверу ( БД )
 $link = mysqli_connect($host, $user, $password, $database)
