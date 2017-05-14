@@ -51,11 +51,11 @@ $info = $speed->speedWind();
 				<a href="#" class="image fit"><img src="images/pic01.jpg" alt="" /></a>
 				<div class="inner">
 					<header>
-						<h2>Lorem ipsum<br />
-						dolor sit amet</h2>
+                        <h2>Бишкек<br/></h2>
+						<h2>Статистика на сегодня<br/></h2>
 					</header>
-					<p>Tortor faucibus ullamcorper nec tempus purus sed penatibus. Lacinia pellentesque eleifend vitae est elit tristique velit tempus etiam.</p>
-				</div>
+                    <canvas id="myChart" width="400" height="400"></canvas>
+                </div>
 			</article>
         </br></br></br></br></br></br></br></br></br></br>
         <!-- Banner -->
@@ -71,12 +71,12 @@ $info = $speed->speedWind();
 
         <!-- Feature 1 -->
         <article id="second" class="container box style1 right">
-            <a href="#" class="image fit"><img src="images/pic01.jpg" alt="" /></a>
             <div class="inner">
                 <header>
                     <h2>Lorem ipsum<br />
                         dolor sit amet</h2>
                 </header>
+                <canvas id="myChart" width="400" height="400"></canvas>
                 <p>Tortor faucibus ullamcorper nec tempus purus sed penatibus. Lacinia pellentesque eleifend vitae est elit tristique velit tempus etiam.</p>
             </div>
         </article>
@@ -101,12 +101,14 @@ $info = $speed->speedWind();
 
         <div><div class="falling-leaves"></div></div>
 
-		<!-- Scripts -->
 
+
+		<!-- Scripts -->
+            <script type="text/javascript" src="js/Chart.js"></script>
+            <script type="text/javascript" src="js/bishkek24.js"></script>
             <script src="js/odometer.js"></script>
             <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
-
-			<script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/jquery.poptrox.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
