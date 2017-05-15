@@ -24,8 +24,6 @@ foreach ( $arrays as $array ) {
             array_push($arraydone,$value);
         }
     }
-
-    echo '</dl>';
 }
 echo json_encode($arraydone);
 ?>
