@@ -4,7 +4,8 @@ var data = {
         {
             label: "Скорость ветра на этот час [м/c]",
             backgroundColor: "rgba(179,181,198,0.2)",
-            borderWidth: 10,
+            borderColor: "rgba(98,185,252,1)",
+            borderWidth: 1,
             data: [2, 3, 4, 2, 3, 2, 2],
         }
 

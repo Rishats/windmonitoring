@@ -9,11 +9,15 @@ $info = $speed->speedWind();
 		<title>W-S-K</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
         <link rel="stylesheet" href="css/windnow.css" />
         <link rel="stylesheet" href="css/odometer-theme-car.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
         <script type="text/javascript">
             var speed = '<?php echo $info; ?>';
 
@@ -23,6 +27,14 @@ $info = $speed->speedWind();
         </script>
     </head>
 	<body>
+    <!-- Page preloader -->
+    <div id="hola">
+        <div id="preloader">
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
 		<!-- Header -->
 			<section id="header">
 				<header>
@@ -42,12 +54,12 @@ $info = $speed->speedWind();
                     <h1 class="intro">М/C</h1>
                 </header>
 				<footer>
-					<a href="#first" class="button style2 scrolly">Мониторинг</a>
+					<a href="#bishkek" class="button style2 scrolly">Мониторинг</a>
 				</footer>
 			</section>
 
 		<!-- Feature 1 -->
-			<article id="first" class="container box style1 right">
+			<article id="bishkek" class="container box style1 right">
 				<a href="#" class="image fit"><img src="images/pic01.jpg" alt="" /></a>
 				<div class="inner">
 					<header>
@@ -56,27 +68,28 @@ $info = $speed->speedWind();
 					</header>
                     <canvas id="myChart" width="400" height="400"></canvas>
                 </div>
+                <a href="#introtokmok" class="button style2 scrolly-middle">Токмок</a>
 			</article>
         </br></br></br></br></br></br></br></br></br></br>
         <!-- Banner -->
         <section id="banner">
             <header>
-                <h2>Разработка</h2>
+                <h2>Токмок</h2>
+                <div id="odometertokmok" class="odometer">30</div>
+                <h1 id="introtokmok">М/C</h1>
             </header>
-
             <footer>
-                <a href="#second" class="button style2 scrolly">Мониторинг</a>
+                <a href="#tokmok" class="button style2 scrolly">Мониторинг</a>
             </footer>
         </section>
 
         <!-- Feature 1 -->
-        <article id="second" class="container box style1 right">
+        <article id="tokmok" class="container box style1 right">
             <div class="inner">
                 <header>
                     <h2>Lorem ipsum<br />
                         dolor sit amet</h2>
                 </header>
-                <canvas id="myChart" width="400" height="400"></canvas>
                 <p>Tortor faucibus ullamcorper nec tempus purus sed penatibus. Lacinia pellentesque eleifend vitae est elit tristique velit tempus etiam.</p>
             </div>
         </article>
@@ -100,9 +113,6 @@ $info = $speed->speedWind();
 		</section>
 
         <div><div class="falling-leaves"></div></div>
-
-
-
 		<!-- Scripts -->
             <script type="text/javascript" src="js/Chart.js"></script>
             <script type="text/javascript" src="js/bishkek24.js"></script>
@@ -115,6 +125,11 @@ $info = $speed->speedWind();
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.ui.min.js'></script>
+    <script src="js/index.js"></script>
+
 
 
 	</body>
